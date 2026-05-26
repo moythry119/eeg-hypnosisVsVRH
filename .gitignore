@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data files — never upload
+*.mat
+*.set
+*.xlsx
+*.csv
+data/mat_files/
+*.edf
+
+# Personal config
+config/local_config.yaml
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large model files
+*.pt
+*.pth
+*.pkl
