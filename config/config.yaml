@@ -1,0 +1,26 @@
+data:
+  n_bands: 5
+  n_channels: 127
+  n_pca_components: 50
+  band_names: [delta, theta, alpha, beta1, beta2]
+  conditions: [REST, HYP, VRH]
+
+model:
+  d_model: 32
+  nhead: 4
+  n_layers: 2
+  dropout: 0.3
+
+training:
+  epochs: 200
+  learning_rate: 0.0005
+  patience: 15
+  batch_size: 16
+  weight_decay: 0.01
+  seed: 42
+
+paths:
+  data_dir: data/mat_files
+  scores_file: data/scores.xlsx
+  results_dir: results
+  figures_dir: results/figures
